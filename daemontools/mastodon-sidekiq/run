@@ -1,0 +1,9 @@
+#!/bin/sh
+
+cd /home/mastodon/live
+
+THREADS=15
+
+exec envdir /var/service/mastodon-sidekiq/env \
+        setuidgid mastodon \
+        /home/mastodon/.rbenv/shims/bundle exec sidekiq -c "$THREADS" 2>&1

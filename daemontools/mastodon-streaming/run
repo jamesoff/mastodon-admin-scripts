@@ -1,0 +1,7 @@
+#!/bin/sh
+
+cd /home/mastodon/live
+
+exec envdir /var/service/mastodon-streaming/env \
+        setuidgid mastodon \
+        /usr/local/bin/node ./streaming 2>&1

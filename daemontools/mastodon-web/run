@@ -1,0 +1,7 @@
+#!/bin/sh
+
+cd /home/mastodon/live
+
+exec envdir /var/service/mastodon-web/env \
+        setuidgid mastodon \
+        /home/mastodon/.rbenv/shims/bundle exec puma -C config/puma.rb 2>&1
