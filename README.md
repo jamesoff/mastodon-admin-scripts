@@ -22,7 +22,7 @@ These scripts are to be run as `root`.
 
 ## daemontools
 
-These scripts are to be used with [daemontools](https://cr.yp.to/daemontools.html) to run the mastodon services. I have them in `/var/service/mastodon-{sidekick,streaming,web}` which makes it easy to restart all the mastodon services: `svc -t /var/service/mastodon-*`.
+These scripts are to be used with [daemontools](https://cr.yp.to/daemontools.html) to run the mastodon services. I have them in `/var/service/mastodon-{sidekiq,streaming,web}` which makes it easy to restart all the mastodon services: `svc -t /var/service/mastodon-*`.
 
 Note that the environment variables for each daemon are set via the `env` directory mechanism offered by daemontools. Likewise, logging is handled by a `log/run` script for each service using `multilog`. See the **Environment** link below for more information.
 
