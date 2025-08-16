@@ -1,3 +1,5 @@
+Moved to https://git.sr.ht/~jamesoff/mastodon-admin-scripts
+
 # Mastodon Admin Scripts
 
 This repo contains some scripts I threw together for running my Mastodon server. I figured they may be of use to others so I'm sharing them here.
